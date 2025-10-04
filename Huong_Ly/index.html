@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Happy Birthday Hương Lý</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🎉 Happy Birthday Hương Lý 🎉</h1>
+    <h2>Chúc bạn luôn xinh đẹp, hạnh phúc và thành công! 💕</h2>
+  </div>
+
+  <!-- Letter (click to open) -->
+  <div class="letter-wrapper">
+    <button class="letter" id="letter" aria-label="Open letter">
+      <span class="envelope">
+        <span class="paper"></span>
+        <span class="click-hint">Click here</span>
+      </span>
+      <span class="seal">
+        <button id="muteBtn" class="mute-btn" aria-label="Toggle music">🔊</button>
+      </span>
+    </button>
+  </div>
+
+  <!-- Message overlay (hidden until letter clicked) -->
+  <div id="message" class="message hidden" role="dialog" aria-modal="true">
+    <div class="message-card">
+      <p>Vào ngày này của 20 năm về trước, một con người phi thường đã ra đời.  
+        Chúc mừng sinh nhật Hương Lý!
+    Chúc Lý tuổi mới luôn vui vẻ, hạnh phúc và thành công trong học tập và cuộc sống!
+Chúc bạn luôn xinh đẹp, tự tin và tỏa sáng như một vì sao trên bầu trời!</p>
+      <button id="closeMessage" class="close-btn" aria-label="Đóng">OK</button>
+    </div>
+  </div>
+
+  <canvas id="fireworks"></canvas>
+
+  <audio autoplay loop>
+    <source src="music/birthday.mp3" type="audio/mpeg">
+    Trình duyệt không hỗ trợ phát nhạc.
+  </audio>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
